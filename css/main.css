@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Pagina de index*/
+.header1 {
+    background-color: rgb(173, 78, 158);
+}
+.nav1 {
+    font-family: lemon;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;  
+    align-items: center;
+   width: 80%;
+}
+.img1 {
+    width: 70px;
+}
+.a1 {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+.a1.active {
+    color: rgb(192, 107, 209);
+}
+
+@media(max-width: 550px) {
+    .nav1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .img1 {
+        width: 120px;
+    }
+    .a1 {
+        font-size: 2rem;
+    }
+}
+.main1 {
+    background-color:  rgb(192, 76, 130);
+}
+.div1 {
+    display: flex;
+}
+@media(max-width:550px) {
+    .div1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.div2 {
+    padding: 2rem;
+    align-items: center;
+}
+.p01 {
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+.h01 {
+    font-family: pacifico;
+    text-align: center;
+    color: white;
+}
+.h0-1 {
+    padding: 1.3rem;
+}
+/* Pie de pagina */
+.footer1 {
+    font-family: Courgette;
+    background-color:rgb(163, 69, 140);
+    text-align: center;
+}
+.a2 {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+/* Pagina de cuidados*/
+.p02 {
+    font-size: 1.5rem;
+}
+/* Pagina de lenceria */
+.grilla {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "arnes arnes lenceria set"
+    "blanco conjunto encaje encaje"
+    ;
+    height: 100vh;
+    text-align: center;
+}
+.arnes{
+    background-color: rgb(198, 100, 182);
+    grid-area: arnes;
+    
+}
+.set {
+    background-color: rgb(64, 153, 160);
+    grid-area: set;
+}
+.lenceria {
+    background-color: rgb(93, 45, 126);
+    grid-area: lenceria;
+}
+.blanco {
+    background-color: rgb(64, 153, 160);
+    grid-area: blanco;
+}
+.conjunto {
+    background-color:  rgb(93, 45, 126);
+    grid-area: conjunto;
+}
+.encaje {
+    background-color:  rgb(198, 100, 182);
+    grid-area: encaje;
+}
+.img2 {
+    width: 25%;
+}
+.img3 {
+    width: 48%;
+}
+.img4 {
+    width: 55%;
+}
+.nav2 {
+    font-family: lemon;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+@media(max-width: 550px) {
+    .nav2 {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1.2rem;
+    }
+    .img1 {
+        width: 90px;
+    }
+    .a1 {
+        font-size: 1.2rem;
+    }
+}
+.grill2 {
+    display: flex;
+    gap: 2rem;
+    background-color: rgb(222, 76, 156);
+}
+
+.bikinis {
+    margin-left: 1.5rem;
+    background-image: url(../img/collage-bikis1.jpg);
+}
+
+.bikinis-3piezas{
+    
+    background-image: url(../img/collage-bikinis3p.png);
+}
+
+.trikinis{
+    
+    margin-right: 1.5rem;
+    background-image: url(../img/collage-trikinis1.jpg);
+}
+.grilla3 {
+    margin-block: 2rem;
+    background-size: contain;
+    background-position: center;
+    width: 100%; 
+}
+.grilla3, .trikinis {
+    background-size: cover;
+}
+.h02 {
+    font-family: lemon;
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 2rem;
+    text-decoration: underline rgb(195, 71, 209);
+}
+.p03 {
+    font-family: Courgette;
+    padding-inline: 1.5rem;
+    padding-block: 0.4rem;
+    color: rgba(48, 48, 48, 0.973);
+}
+.h03 {
+    font-family: lemon;
+    padding-inline: 1rem;
+}
+@media(max-width:700px) {
+    .grill2 {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        background-color: rgb(171, 61, 158);
+    }
+    .grilla3 {
+    margin-block: 2rem;
+    background-size: cover;
+    background-position: center
+    }
+    .trikinis {
+        margin-left: 0rem;
+    }
+}
+
+/*Pagina de contacto*/
+
+.infoContacto h1 {
+    font-family: "lemon";
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+
+}
+
+.infoContacto{
+    background-color: rgb(173, 34, 150);
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.p04{
+    font-family: Courgette;
+    font-size: 1rem;
+   
+}
+
+.formContacto h1 {
+    font-family: lemon;
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: 600;
+  }
+  
+
+.formContacto{
+    font-family: Courgette;
+    background-color: rgb(176, 91, 161);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
