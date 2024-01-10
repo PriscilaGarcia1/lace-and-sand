@@ -236,7 +236,7 @@
     text-align: center;
     color: rgb(255, 255, 255);
 }
-.p04{
+.p04, a{
     font-family: Courgette;
     font-size: 1rem;
     text-decoration: none;
